@@ -1,9 +1,9 @@
 # schaeffler_test
-## Test 1
+## Test 0
 Different regression models were tested to find out that linear regression is more suitable for the give data set but it is also understood that the feature 'a' has no use while 'b' and 'c' has a linear pattern in the scatter plots. 
 ![alt-text-1](/test0/analysis_1.png "title-2")
 
-Though regression is suitable, it did not work well due to the obvious outliers as seen in the plots. But after rejecting the outliers using a median based filter improves the performance of the model.
+Though regression is suitable, it did not work well due to the obvious outliers as seen in the plots. But after rejecting the outliers using a median based filter improves the performance of the model. The below metrics show the accuracy score of linear regression model with different configurations
 ```
 With no cleaning
 ('linear regression a', -0.00022688400900561234)
@@ -15,6 +15,25 @@ After rejecting outliers
 ('linear regression b or c ', 0.94238257661225511)
 ('linear regression b c', 0.9412393885098318)
 ('linear regression a b c', 0.9412393885098318)
+```
+## Test 1
+Similar to Test 0, after filtering outliers, linear regression captures the model to an accuracy of 92%. Features 'b' and 'd' don't seem to have any value to the model.
+```
+('linear regression', 0.91455294682158228)
+```
+## Test 2
+Similar to the previous tests, after filtering outliers, linear regression captures the model to an accuracy of around 80%. 
+```
+('linear regression', 0.85297415222630291)
+('ridge regression', 0.85293572025048303)
+('svm-linear', 0.84991946407442953)
+('svm-poly', 0.73381953944876288)
+('svm-rbf', 0.79683567808858091)
+```
+## Test 3
+Similar to the previous tests, after filtering outliers, linear regression captures the model to an accuracy of 85%. Features 'b' and 'd' don't seem to have any value to the model.
+```
+('linear regression', 0.85439841655456128)
 ```
 ## Test 4
 Different regression models are tested to find out that SVMs, Linear and ridge regression work pretty well for this data set. The model accuracy is verified by cross validation to ensure its genericness. Since the context of the data is unknown, the problem is considered continuous rather than categorical ignoring the integerness of the 't'
