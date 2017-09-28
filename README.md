@@ -1,5 +1,5 @@
 # schaeffler_test
-## Test 1
+## Test 0
 Different regression models were tested to find out that linear regression is more suitable for the give data set but it is also understood that the feature 'a' has no use while 'b' and 'c' has a linear pattern in the scatter plots. 
 ![alt-text-1](/test0/analysis_1.png "title-2")
 
@@ -16,6 +16,8 @@ After rejecting outliers
 ('linear regression b c', 0.9412393885098318)
 ('linear regression a b c', 0.9412393885098318)
 ```
+## Test 1
+
 ## Test 4
 Different regression models are tested to find out that SVMs, Linear and ridge regression work pretty well for this data set. The model accuracy is verified by cross validation to ensure its genericness. Since the context of the data is unknown, the problem is considered continuous rather than categorical ignoring the integerness of the 't'
 #### Training
