@@ -3,7 +3,7 @@
 Different regression models were tested to find out that linear regression is more suitable for the give data set but it is also understood that the feature 'a' has no use while 'b' and 'c' has a linear pattern in the scatter plots. 
 ![alt-text-1](/test0/analysis_1.png "title-2")
 
-Though regression is suitable, it did not work well due to the obvious outliers as seen in the plots. But after rejecting the outliers using a median based filter improves the performance of the model.
+Though regression is suitable, it did not work well due to the obvious outliers as seen in the plots. But after rejecting the outliers using a median based filter improves the performance of the model. The below metrics show the accuracy score of linear regression model with different configurations
 ```
 With no cleaning
 ('linear regression a', -0.00022688400900561234)
