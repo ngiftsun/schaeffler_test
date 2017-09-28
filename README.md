@@ -17,7 +17,20 @@ After rejecting outliers
 ('linear regression a b c', 0.9412393885098318)
 ```
 ## Test 1
-
+Similar to Test 0, after filtering outliers, linear regression captures the model to an accuracy of 92%. Features 'b' and 'd' don't seem to have any value to the model.
+```
+('linear regression', 0.91455294682158228)
+```
+## Test 2
+Similar to Test 0, after filtering outliers, linear regression captures the model to an accuracy of 92%. Features 'b' and 'd' don't seem to have any value to the model.
+```
+('linear regression', 0.91455294682158228)
+```
+## Test 3
+Similar to Test 0, after filtering outliers, linear regression captures the model to an accuracy of 92%. Features 'b' and 'd' don't seem to have any value to the model.
+```
+('linear regression', 0.91455294682158228)
+```
 ## Test 4
 Different regression models are tested to find out that SVMs, Linear and ridge regression work pretty well for this data set. The model accuracy is verified by cross validation to ensure its genericness. Since the context of the data is unknown, the problem is considered continuous rather than categorical ignoring the integerness of the 't'
 #### Training
